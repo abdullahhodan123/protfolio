@@ -123,6 +123,60 @@ footer{padding:2rem 0;display:flex;justify-content:space-between;align-items:cen
 .proj-link:hover{transform:translateY(-1px);opacity:0.85;}
 .proj-live{background:var(--indigo-mid);color:#fff;}
 .proj-code{background:var(--surface);color:var(--ink-mid);border:1px solid var(--border);}
+.project-thumb img{max-width:100%;height:auto;display:block;}
+
+@media (max-width:980px){
+  .site{padding:0 1.5rem;}
+  nav{flex-wrap:wrap;gap:1rem;}
+  .nav-links{flex-wrap:wrap;justify-content:center;gap:1rem;}
+  .hero{grid-template-columns:1fr;gap:2.5rem;padding:4rem 0 2.5rem;}
+  .hero-heading{font-size:42px;}
+  .hero-sub{max-width:none;}
+  .hero-right{align-items:center;}
+  .photo-wrap{width:200px;height:200px;}
+  .photo-circle{width:200px;height:200px;}
+  .project-card.featured{grid-template-columns:1fr;}
+  .projects-grid{grid-template-columns:1fr;}
+  .skills-grid{grid-template-columns:1fr 1fr;}
+  .cta-banner{flex-direction:column;align-items:flex-start;padding:2.5rem;}
+  .cta-right{width:100%;}
+  .contact-card{min-height:unset;}
+  footer{flex-direction:column;align-items:flex-start;gap:1rem;}
+}
+
+@media (max-width:680px){
+  .site{padding:0 1rem;}
+  nav{padding:1rem 0;}
+  .nav-links{gap:0.75rem;}
+  .nav-links li{width:100%;text-align:center;}
+  .nav-links a{font-size:13px;}
+  .hero-heading{font-size:34px;}
+  .hero-actions{justify-content:center;}
+  .photo-wrap{width:180px;height:180px;}
+  .photo-circle{width:180px;height:180px;}
+  .project-body{padding:1.25rem 1rem;}
+  .skills-grid{grid-template-columns:1fr;}
+  .cta-banner{padding:2rem;}
+  .cta-heading{font-size:28px;}
+  .btn-white{width:100%;}
+  .contact-card{padding:1.5rem;}
+  .footer-links{flex-wrap:wrap;gap:0.75rem;}
+}
+
+@media (max-width:520px){
+  .nav-logo{font-size:18px;}
+  .hero-heading{font-size:28px;}
+  .hero-badge{font-size:11px;padding:6px 12px;}
+  .hero-sub{font-size:14px;}
+  .hero-loc{font-size:12px;}
+  .project-name{font-size:18px;}
+  .project-card.featured .project-name{font-size:22px;}
+  .project-stack,.project-links{justify-content:flex-start;}
+  .project-links{flex-direction:column;align-items:flex-start;}
+  .proj-link{width:100%;text-align:center;}
+  .contact-card{text-align:left;}
+  .footer-copy{font-size:12px;}
+}
 </style>
 </head>
 <body>
